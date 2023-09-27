@@ -17,17 +17,14 @@
             Quando eu digitar usuário ou senha inválidos
             Então deve exibir  "usuário ou senha inválidos"
 
-            Esquema do Cenário: 
+            Esquema do Cenário:  autenticação de usuários
             Quando inserir <usuario> inválido
             E ou <senha> inválido
             Então deve exibir <mensagem>
 
-            Exemplos: válidos
+            Exemplos: 
             | usuário           | senha   | mensagem                   |
             | Carlos.Alberto887 | 2011144 | Bem-vindo novamente Carlos |
             | Maria_Eli-sa      | 77Rai   | Bem-vinda Maria            |
-
-            Exemplos: inválidos
-            |usuário|senha|mensagem|
             |Marciaa9W,ss|123456|Usuário ou senha inválidos|
             |Siilvae5555|456789|Usuário ou senha inválidos|

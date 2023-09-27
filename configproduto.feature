@@ -24,14 +24,14 @@
             E clicar no botão de limpar
             Então será possível limpar as configurações feitas
 
-            Exemplos:
-            | Item | Cor e Tamanho | Adicionar ao carrinho |
-            |Camiseta| Amarela M| Adicionado ao carrinho|
-            
-            Exemplos:
-            |Item| Quantidade| ABA do Carrinho|
-            |Calça| 4 | Direcionar a aba do carrinho|
+            Esquema do Cenário: Configurar produto
+            Dado que eu acesse a loja EBAC
+            Quando eu selecionar <item>, <cor>, e <tamanho>
+            E aclicar no botão carrinho
+            Então deverá aparecer uma <mensagem>
 
-            Exemplos: 
-            |Item| Cor Tamanho| Limpar configurações|
-            |Luva| Preta P| Limpar configurações|
+            Exemplos:
+            | Item | Cor e Tamanho | mensagem |
+            |Camiseta| Amarela M| Adicionado ao carrinho|
+            |Bermuda|38|falha ao adicionar, revise os campos e tente novamente|
+            
